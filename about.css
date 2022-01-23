@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+   
+   
+  section {
+    margin-bottom: 20px!important;
+  }
+  
+ 
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://www.xmple.com/wallpaper/white-linear-blue-gradient-2736x1824-c2-b0e0e6-ffffff-a-255-f-14.svg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-attachment: fixed;
+  }
+  
+  
+    
+  header .header-nav {
+    float:left;
+    margin-top: 30px;
+  }  
+  .header-logo {
+
+ float :left;
+    object-fit: cover;
+  }
+  header .header-nav a {
+     border: 1px solid rgb(11, 12, 11); 
+    padding: 10px 90px;
+     margin: 10px 90px;  
+    /* border-radius: 5px; */
+    color: rgb(17, 22, 17);
+    text-transform: uppercase;
+  }
+  .active {
+    background-color: #fcfdfd;
+  }
+  
+main {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+  }
+  
+  .hero {
+    height: 10vh;
+    width: 50%;
+     background-size: cover;
+    display: flex;
+    align-items:center;
+    justify-content:right;
+    flex-direction: column;
+    position: relative;
+    background-attachment: fixed;
+  }
+  
+  .hero::after {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+  }
+  
+  .hero h1,
+  .hero h2 {
+    color: #fff;
+    z-index: 2;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .about-us {
+    display: flex;
+    gap: 100px;
+    line-height: 2;
+    align-items: center;
+    height: 600px;
+  }
+  
+  .about-us article:first-child {
+    width: 500px;
+  }
+  
+  .image-conteiner {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .image-conteiner img {
+    width: 100%;
+    height: 70%;
+  }
+  
+  .image-conteiner:hover img {
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+  
+  .services {
+    display: flex;
+    gap: 100px;
+    line-height: 2;
+    align-items: center;
+  }
+  
+  .services > div {
+    width: 100%;
+    background: #fff;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+    height: 120px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+  .contect-us form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 20px;
+  }
+  
+  .contect-us form input {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+  }
+
+   
+  footer {
+    grid-column: 1 / 3;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color: #fff;
+    grid-row: 3 / -1;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .about-us, .services {
+      flex-direction: column;
+    }
+  
+    .container {
+      width: 100%;
+    }
+  
+    .contect-us form {
+      grid-template-columns: 1fr;
+    }
+}
