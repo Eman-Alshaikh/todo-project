@@ -1,24 +1,62 @@
- 
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-header .header-nav {
-    float:left ;
-    margin-top: 10px;
-    margin-right: 20cm ;
-  }  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
   
+  a {
+    text-decoration: none;
+  }
+  
+  
+   
+   
+  section {
+    margin-bottom: 20px!important;
+  }
+  
+ 
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://www.xmple.com/wallpaper/white-linear-blue-gradient-2736x1824-c2-b0e0e6-ffffff-a-255-f-14.svg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-attachment: fixed;
+  }
+  
+  
+    
+  header .header-nav {
+    float:right;
+    margin-top: 30px;
+    padding:20px 20px;
+  }  
+  .header-logo {
+
+ float :left;
+    object-fit: cover;
+  }
   header .header-nav a {
-    /* border: 1px solid #000; */
-    padding: 50px 60px;
-    /* margin: 10px 20px; */
+     border: 1px solid rgb(11, 12, 11); 
+    padding: 10px 90px;
+     margin: 10px 90px;  
     /* border-radius: 5px; */
-    color: rgb(161, 192, 212);
+    color: rgb(17, 22, 17);
     text-transform: uppercase;
+  }
+  .active {
+    background-color: #fcfdfd;
+  }
+  
+main {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
   }
   
   .header-logo {
@@ -36,11 +74,9 @@ a {
   text-decoration: none;
 }
 
-#table {
-
-}
+ 
 th {
-  background-color: #86ac9e;
+  background-color: #b3e4e4;
   color: white;
 }
 .container {
@@ -57,7 +93,7 @@ th {
 section {
   margin-bottom: 20px!important;
 }
-/*
+ 
 header {
   height: 100px;
   grid-column: 1 / 2;
@@ -70,31 +106,46 @@ header {
   right: 0;
   z-index: 2;
 }
-*/
+ 
 /*
 .active {
   background-color: #04AA6D;
 }*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+ 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
    
-  background-color: #333;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
    
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-header .header-nav {
+  section {
+    margin-bottom: 20px!important;
+  }
+  
+ 
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://www.xmple.com/wallpaper/white-linear-blue-gradient-2736x1824-c2-b0e0e6-ffffff-a-255-f-14.svg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-attachment: fixed;
+  }
+  
+  
+    
+  header .header-nav {
     float:left;
     margin-top: 30px;
   }  
@@ -114,309 +165,19 @@ header .header-nav {
   .active {
     background-color: #fcfdfd;
   }
-  main {
+  
+main {
     grid-column: 1 / -1;
     grid-row: 1 / 3;
   }
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  th, td {
-    padding: 15px;
-    text-align: left;
-  }
-  a {
-    text-decoration: none;
-  }
-  
-  #table {
-  
-  }
-  th {
-    background-color: #86ac9e;
-    color: white;
-  }
-  .container {
-    width: 1140px;
-    margin: 0 auto;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-rows: 100px 1fr 50px;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  section {
-    margin-bottom: 20px!important;
-  }
-  
-  header {
-    height: 100px;
-    grid-column: 1 / 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0px;
-    left: 0;
-    right: 0;
-    z-index: 2;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-     
-    background-color: #333;
-  }
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-     
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  
-    main {
-      grid-column: 1 / -1;
-      grid-row: 1 / 3;
-    }
-    
-    .hero {
-      height: 100vh;
-      width: 100%;
-      background-image: url( https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcoDcmXHjansdKfGXeSzCRRLurAUDNjRN_WQ&usqp=CAU);
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      position: relative;
-      background-attachment: fixed;
-    }
-    
-    .hero::after {
-      background-color: rgba(0, 0, 0, 0.5);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      content: '';
-    }
-    
-    .hero h1,
-    .hero h2 {
-      color: #fff;
-      z-index: 2;
-      font-family: 'Roboto', sans-serif;
-    }
-    
-    .about-us {
-      display: flex;
-      gap: 100px;
-      line-height: 2;
-      align-items: center;
-      height: 600px;
-    }
-    
-    .about-us article:first-child {
-      width: 500px;
-    }
-    
-    .image-conteiner {
-      width: 500px;
-      height: 500px;
-      overflow: hidden;
-    }
-    
-    .image-conteiner img {
-      width: 100%;
-      height: 100%;
-    }
-    
-    .image-conteiner:hover img {
-      transform: scale(1.2);
-      transition: 0.3s;
-    }
-    
-    .services {
-      display: flex;
-      gap: 100px;
-      line-height: 2;
-      align-items: center;
-    }
-    
-    .services > div {
-      width: 100%;
-      background: #fff;
-      filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
-      height: 120px;
-      padding: 10px;
-      text-align: center;
-    }
-    
-    .contect-us form {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px 20px;
-    }
-    
-    .contect-us form input {
-      width: 100%;
-      height: 40px;
-      padding: 5px 10px;
-    }
-    
-    footer {
-      grid-column: 1 / 4;
-      /* text-align: center; */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #222;
-      color: #fff;
-      grid-row: 4 / -1;
-    }
-    
-    @media only screen and (max-width: 600px) {
-      .about-us, .services {
-        flex-direction: column;
-      }
-    
-      .container {
-        width: 90%;
-      }
-    
-      .contect-us form {
-        grid-template-columns: 1fr;
-      }
-  
-  .hero {
-    height: 100vh;
-    width: 100%;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcoDcmXHjansdKfGXeSzCRRLurAUDNjRN_WQ&usqp=CAU);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    background-attachment: fixed;
-  }
-  
-  .hero::after {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    content: '';
-  }
-  
-  .hero h1,
-  .hero h2 {
-    color: #fff;
-    z-index: 2;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .about-us {
-    display: flex;
-    gap: 100px;
-    line-height: 2;
-    align-items: center;
-    height: 600px;
-  }
-  
-  .about-us article:first-child {
-    width: 500px;
-  }
-  
-  .image-conteiner {
-    width: 500px;
-    height: 500px;
-    overflow: hidden;
-  }
-  
-  .image-conteiner img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .image-conteiner:hover img {
-    transform: scale(1.2);
-    transition: 0.3s;
-  }
-  
-  .services {
-    display: flex;
-    gap: 100px;
-    line-height: 2;
-    align-items: center;
-  }
-  
-  .services > div {
-    width: 100%;
-    background: #fff;
-    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
-    height: 120px;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .contect-us form {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px 20px;
-  }
-  
-  .contect-us form input {
-    width: 100%;
-    height: 40px;
-    padding: 5px 10px;
-  }
-  
   footer {
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
     /* text-align: center; */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #222;
     color: #fff;
-    grid-row: 4 / -1;
+    grid-row: 3 / -1;
   }
   
-  @media only screen and (max-width: 600px) {
-    .about-us, .services {
-      flex-direction: column;
-    }
-  
-    .container {
-      width: 90%;
-    }
-  
-    .contect-us form {
-      grid-template-columns: 1fr;
-    }
-  }
-
-    }
