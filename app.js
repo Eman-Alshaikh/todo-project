@@ -39,8 +39,10 @@ else
 }
 
 
-let proceed = confirm("do you want to answer another 3 questions?");
-if (proceed) {
+let proceed = prompt("do you want to answer another 3 questions? answer with yes or no ");
+if (proceed=="yes")
+{
+ 
     var  lastName = prompt('please Enter your last name here : ');
      person[3]= console.log(lastName);
 
@@ -50,6 +52,15 @@ if (proceed) {
      var  birthday = prompt('please Enter your birthday   : ');
      person[5]= console.log(birthday);
 
-} else {
-  
 }
+ else if  (proceed=="no") 
+ {
+     
+alert('ok thank you ');
+ }
+ else if  (proceed==" ")
+ {
+    console.log("invalid answer");
+ }
+  
+ 
