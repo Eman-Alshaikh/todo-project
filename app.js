@@ -39,6 +39,7 @@ else
 }
 
 // eman
+//Eman
 let proceed = prompt("do you want to answer another 3 questions? answer with yes or no ");
 if (proceed=="yes")
 {
