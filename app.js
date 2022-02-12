@@ -1,67 +1,67 @@
+
 'use strict';
-const person = [];
+
  
-alert('This is alert message');
+var UserName= prompt('Please enter your name here : ');
+
+var gender = prompt('Please enter your gender here : you must enter(Male or Female').toUpperCase();
+
+if (gender !== 'MALE' && gender !== 'FEMALE') {
+
+  alert('you can only enter Male or Female');
+
+  gender = prompt('Please enter your gender here : you must enter(Male or Female').toUpperCase();
+}
+
+var age = prompt('Please enter your age here :');
+if (age <= 0) {
+  alert('the age must be bigger than 0 ');
+  age = prompt('Please enter your age here:');
+
+}
+
+
+var x = prompt('do you want to skip the welcoming Message?').toUpperCase();
+if (x=== 'YES') {
+
+   var confirmation = confirm('Are you sure?');
+}
+else {
+  if (gender === 'MALE') {
+    alert(`Welcome to Mr. ${UserName}`);
+  }
+  else if (gender === 'FEMALE') {
+    alert(`Welcome to Mrs. ${Username}`);
+  }
+  else {
+    alert(`You are Welcome `);  }
+
+}
+
+
+
+function theQuestions (q) {
+  let arrAnswer= [];
+  for (let i= 0;i<q.length; i++) {
+
  
-var  inp = prompt('please Enter your name here : ');
-person[0]= console.log(inp);
- 
-var  gender = prompt('please Enter your gender here : you must enter "male" or "female"');
- 
-person[1]= console.log(gender);
- 
- 
-var  age = prompt('please Enter your age here : ');
-console.log('Your age is : ',age);
-person[2]= console.log(age);
-    if (age<=0)
-    {
-        alert('the age must be bigger than 0 ');  
+    let theAns= prompt(q[i]).toLowerCase();
+    if (theAns === ' '){
+     arrAnswer.push('in valid');}
+    else if(theAns === 'yes' || theAns === 'no'){
+    arrAnswer.push(theAns);}
+    else{
+      alert('In valid answer');
     }
-    confirm("Do you want to skip the welcoming message?");
  
-    if (gender=="male")
-{
- var x= 'welcome  MR    ' + inp + ' ! How are you today?';
-alert(x);
-}
-else if (gender=="female")
-{
-    var y= 'welcome  MRs    ' + inp + ' ! How are you today?';
-    alert(y);
-}
-else
-{
-    var z= 'welcome    ' + inp + ' ! How are you today?';
-    alert(z);  
- 
-     
-}
+  }
+  for (let i = 0 ; i < arrAnswer.length; i++) {
+    console.log(`the answer is ${i+1}: ${arrAnswer[i]}`);
 
-// eman
-//Eman
-let proceed = prompt("do you want to answer another 3 questions? answer with yes or no ");
-if (proceed=="yes")
-{
- 
-    var  lastName = prompt('please Enter your last name here : ');
-     person[3]= console.log(lastName);
-
-     var  luckyNum= prompt('please Enter your lucky digit number : ');
-     person[4]= console.log(luckyNum);
-
-     var  birthday = prompt('please Enter your birthday   : ');
-     person[5]= console.log(birthday);
+  }
 
 }
- else if  (proceed=="no") 
- {
-     
-alert('ok thank you ');
- }
- else if  (proceed==" ")
- {
-    console.log("invalid answer");
- }
-  
- 
+
+theQuestions(['please Enter your last name here : ',
+'please Enter your lucky digit number : ','please Enter your birthday   : ']);
+
