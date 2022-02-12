@@ -61,7 +61,7 @@ function theQuestions (q) {
   }
 
 }
-
+//////////////////////////////////
 theQuestions(['please Enter your last name here : ',
 'please Enter your lucky digit number : ','please Enter your birthday   : ']);
 
